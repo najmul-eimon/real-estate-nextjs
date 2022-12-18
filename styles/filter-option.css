@@ -1,0 +1,230 @@
+/*===========================================================
+Select CSS
+=============================================================*/
+.custom-select .select-btn {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  position: relative;
+}
+
+.custom-select .btn-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 12px 0 14px;
+  line-height: 22px;
+  color: var(--body-text);
+  text-transform: capitalize;
+  border-bottom: 1px solid var(--body-text);
+}
+
+.custom-select .rotate {
+  transform: rotate(180deg);
+}
+
+.custom-select .arrow-icon {
+  font-size: 18px;
+  color: var(--body-text1);
+}
+
+.custom-select .btn-dropdown {
+  max-height: 200px;
+  position: absolute;
+  z-index: 50;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  text-transform: capitalize;
+  width: 100%;
+  overflow-y: auto;
+  -webkit-box-shadow: 0px 0px 37px rgba(34, 34, 51, 0.08);
+  box-shadow: 0px 0px 37px rgba(34, 34, 51, 0.08);
+  padding: 16px 10px;
+  white-space: nowrap;
+  border-radius: 6px;
+}
+
+.custom-select .btn-dropdown p {
+  padding: 9px 40px 9px 16px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  color: var(--body-text);
+  font-size: 16px;
+  text-align: left;
+}
+
+.custom-select .btn-dropdown p:hover {
+  background-color: rgba(22, 163, 173, 0.1);
+  color: var(--primary);
+}
+
+.custom-select .btn-dropdown::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-select .btn-dropdown::-moz-scrollbar {
+  width: 5px;
+}
+
+.custom-select .btn-dropdown::-webkit-scrollbar-track {
+  background-color: #F4F4F4;
+}
+
+.custom-select .btn-dropdown::-moz-scrollbar-track {
+  background-color: #F4F4F4;
+}
+
+.custom-select .btn-dropdown::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+.custom-select .btn-dropdown::-moz-scrollbar-thumb {
+  background: var(--primary);
+}
+
+/*===========================================================
+filter properties CSS
+=============================================================*/
+.filter-main .filter-content {
+  max-width: 985px;
+  margin: auto;
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0px 0px 37px rgba(34, 34, 51, 0.08);
+}
+
+/*==================== property page filter ====================*/
+.property-page .filter-main {
+  margin-bottom: 32px;
+}
+
+.filter-main .filter-content h4 {
+  font-size: 16px;
+  color: var(--primary-text);
+}
+
+.filter-main .filter-content .filter-row.row {
+  --bs-gutter-y: 24px;
+}
+
+.filter-main .bottom-content {
+  margin-top: 24px;
+  transition: all 0.8s ease-in-out;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.filter-main .bottom-content.show {
+  max-height: 600px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.filter-main .slider {
+  cursor: pointer;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.filter-main .track {
+  background-color: #E4E5E8;
+  height: 4px;
+  border-radius: 22px;
+}
+
+.filter-main .track:nth-child(2) {
+  background-color: var(--primary);
+}
+
+.filter-main .thumb {
+  width: 12px;
+  height: 12px;
+  background: var(--white);
+  border: 1px solid var(--body-text2);
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: -4px;
+}
+
+.filter-main .range-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding-top: 8px;
+}
+
+.filter-main .range-value p {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--body-text2);
+  padding-top: 0;
+}
+
+.filter-main .filter-buttons {
+  gap: 24px;
+}
+
+.filter-main .filter-buttons .filter {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+  color: var(--primary-text);
+  border-radius: 6px;
+}
+
+.filter-main .filter-buttons .filter .filter-icon {
+  font-size: 20px;
+  color: var(--primary);
+  transform: rotate(90deg);
+}
+
+.filter-main .filter-buttons .search {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--primary);
+  border-radius: 8px;
+}
+
+
+/*==================== responsive ====================*/
+@media (min-width:992px) and (max-width:1199px) {
+  .filter-main .filter-buttons {
+    gap: 4px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .filter-main .filter-content {
+    padding: 16px 24px;
+  }
+
+  .filter-main .filter-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .filter-main .filter-buttons .search {
+    padding: 9px 24px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+  .filter-main .filter-buttons {
+    flex-direction: row;
+  }
+}
