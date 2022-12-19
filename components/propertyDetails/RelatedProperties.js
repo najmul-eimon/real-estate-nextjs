@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import {properties} from '../../data/property';
 import PropertyModal from "../shared/PropertyModal";
-import '../../assets/css/properties.css';
+import Image from "next/image";
 
 const RelatedProperties = () => {
   const [show, setShow] = useState(false);
@@ -58,13 +59,13 @@ const RelatedProperties = () => {
                             </div>
                           </div>
                           <div className="image">
-                            <img src={image} className="img-fluid" alt=""/>
+                            <Image src={image} alt="Property Image"/>
                           </div>
                           <p className="desc">{description.slice(0,1)}</p>
                         </div>
                         <div className="buttons d-flex align-items-center">
                           <button type="button" onClick={handleShow}>Play Video</button>
-                          <Link to={`/property/property-details/${id}`} onClick={window.scrollTo(0, 0)}>Details More</Link>
+                          <Link href={`/property/${id}`}>Details More</Link>
                         </div>
                       </div>
                     </SwiperSlide>

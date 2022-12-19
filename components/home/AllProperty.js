@@ -4,8 +4,8 @@ import { changeView } from '../../utility/utility';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import { FaRegListAlt } from 'react-icons/fa';
-import SinglePropertyList from '../properties/SinglePropertyList';
 import { BsGrid } from 'react-icons/bs';
+import SinglePropertyList from '../properties/SinglePropertyList';
 import SinglePropertyGrid from '../properties/SinglePropertyGrid';
 import ReactPaginate from 'react-paginate';
 

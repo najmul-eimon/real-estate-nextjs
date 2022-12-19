@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import {places} from '../../data/place';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import {BiChevronRightCircle} from 'react-icons/bi';
 import { SaveToLocalContext } from '../layout/Layout';
-import '../../assets/css/place.css';
+import Image from 'next/image';
 
 const Place = () => {
   // get data from context
@@ -30,8 +30,8 @@ const Place = () => {
                 {
                   places.map(({id, name, image}) => 
                     <div key={id} className="single-place">
-                      <Link to="property" onClick={() => handlePlace(name)}>
-                        <img src={image} className="img-fluid" alt=""/>
+                      <Link href="property" onClick={() => handlePlace(name)}>
+                        <Image src={image} alt="Place Image"/>
                         <div className="overlay">
                           <p>{name} <BiChevronRightCircle className='place-icon'/></p>
                         </div>

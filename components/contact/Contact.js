@@ -1,12 +1,11 @@
 import React from 'react';
-import linkedin from '../../assets/images/svg/linkedin.svg';
-import twitter from '../../assets/images/svg/twitter.svg';
-import facebook from '../../assets/images/svg/facebook.svg';
+import linkedin from '../../public/svg/linkedin.svg';
+import twitter from '../../public/svg/twitter.svg';
+import facebook from '../../public/svg/facebook.svg';
 import {BsEnvelopeOpen} from 'react-icons/bs';
 import {FiPhoneCall} from 'react-icons/fi';
 import ContactForm from './ContactForm';
-import '../../assets/css/filter-option.css';
-import '../../assets/css/contacts.css';
+import Image from 'next/image';
 
 const Contact = () => {
 
@@ -34,17 +33,17 @@ const Contact = () => {
               <ul className="social-media">
                 <li>
                   <a href="#!">
-                    <img src={linkedin} alt=""/>
+                    <Image src={linkedin} alt="Linkedin Icon"/>
                   </a>
                 </li>
                 <li>
                   <a href="#!">
-                    <img src={twitter} alt=""/>
+                    <Image src={twitter} alt="Twitter Icon"/>
                   </a>
                 </li>
                 <li>
                   <a href="#!">
-                    <img src={facebook} alt=""/>
+                    <Image src={facebook} alt="Facebook Icon"/>
                   </a>
                 </li>
               </ul>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import PropertyModal from '../shared/PropertyModal';
-import '../../assets/css/properties.css';
+import Image from 'next/image';
 
 const SinglePropertyGrid = ({property}) => {
   const {id, name, image, floor, space, bedRoom, description} = property;
@@ -31,13 +31,13 @@ const SinglePropertyGrid = ({property}) => {
               </div>
             </div>
             <div className="image">
-              <img src={image} className="img-fluid" alt=""/>
+              <Image src={image} alt="Property Image"/>
             </div>
             <p className="desc">{description.slice(0,1)}</p>
           </div>
           <div className="buttons d-flex align-items-center">
             <button type="button" onClick={handleShow}>Play Video</button>
-            <Link to={`/property/property-details/${id}`}>Details More</Link>
+            <Link href={`/property/${id}`}>Details More</Link>
           </div>
         </div>
       </div>

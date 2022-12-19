@@ -1,6 +1,5 @@
-import React from 'react';
+import Image from 'next/image';
 import {address} from '../../data/address';
-import '../../assets/css/contacts.css';
 
 const Address = () => {
   return (
@@ -19,7 +18,7 @@ const Address = () => {
                 <div key={id} className="col-md-6 col-lg-6">
                   <div className="address-card">
                     <div className="image">
-                      <img src={image} alt=""/>
+                      <Image src={image} alt="Location image"/>
                     </div>
                     <h4>{city}</h4>
                     <ul>

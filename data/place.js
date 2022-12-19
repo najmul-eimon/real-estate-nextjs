@@ -1,7 +1,7 @@
-import place1 from '../assets/images/place/new-york.jpg';
-import place2 from '../assets/images/place/san.jpg';
-import place3 from '../assets/images/place/los.jpg';
-import place4 from '../assets/images/place/minnesota.jpg';
+import place1 from '../public/place/new-york.jpg';
+import place2 from '../public/place/san.jpg';
+import place3 from '../public/place/los.jpg';
+import place4 from '../public/place/minnesota.jpg';
 
 export const places = [
   {

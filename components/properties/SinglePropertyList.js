@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import PropertyModal from '../shared/PropertyModal';
-import '../../assets/css/properties.css';
+import Image from 'next/image';
 
 const SinglePropertyList = ({property}) => {
   const {id, name, image, floor, space, bedRoom, description} = property;
@@ -13,7 +13,7 @@ const SinglePropertyList = ({property}) => {
     <>
       <li className="single-property">
         <div className="image">
-          <img src={image} className="img-fluid" alt=""/>
+          <Image src={image} alt="Property Image"/>
         </div>
         <div className="content">
           <h3>{name}</h3>
@@ -34,7 +34,7 @@ const SinglePropertyList = ({property}) => {
           </div>
           <div className="buttons d-flex align-items-center">
             <button type="button" onClick={handleShow}>Play Video</button>
-            <Link to={`/property/property-details/${id}`}>Details More</Link>
+            <Link href={`/property/${id}`}>Details More</Link>
           </div>
         </div>
       </li>

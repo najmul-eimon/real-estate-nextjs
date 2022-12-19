@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import about from '../../assets/images/about/about.jpg';
-import video from '../../assets/images/about/video.jpg';
+import Link from 'next/link';
+import about from '../../public/about/about.jpg';
+import video from '../../public/about/video.jpg';
 import { FaPlay } from "react-icons/fa";
 import PropertyModal from '../shared/PropertyModal';
-import '../../assets/css/about.css';
+import Image from 'next/image';
 
 const AboutUs = () => {
   const [show, setShow] = useState(false);
@@ -19,9 +19,9 @@ const AboutUs = () => {
           <div className="row">
             <div className="col-md-6 col-lg-5">
               <div className="image position-relative">
-                <img src={about} alt=""/>
+                <Image src={about} alt="About Image"/>
                 <div className="video">
-                  <img src={video} alt=""/>
+                  <Image src={video} alt="Video Image"/>
                   <button type="button" onClick={handleShow}><FaPlay className="play-icon" /></button>
                 </div>
               </div>
@@ -41,7 +41,7 @@ const AboutUs = () => {
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                 </div>
                 
-                <Link to="/contact" className="contact-btn btn-style">Contact us</Link>
+                <Link href="/contact" className="contact-btn btn-style">Contact us</Link>
               </div>
             </div>
           </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import SingleBlog from './SingleBlog';
 import {blogs} from '../../data/blog';
-import '../../assets/css/blog.css';
 
 const AllBlog = () => {
   const otherBlogs = blogs.filter((blog) => blog.status !== "recent");

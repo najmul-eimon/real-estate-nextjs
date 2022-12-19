@@ -1,8 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import AllBlog from './AllBlog';
 import RecentBlog from './RecentBlog';
-import '../../assets/css/blog.css';
 
 const Blog = ({data}) => {
   return (
@@ -47,7 +45,7 @@ const Blog = ({data}) => {
           data === "blog-section" && (
           <div className="col-md-12">
             <div className="text-center view-all">
-              <Link to="/blog" className="view-all-btn btn-style">View all</Link>
+              <Link href="/blog" className="view-all-btn btn-style">View all</Link>
             </div>
           </div>
         )}

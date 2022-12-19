@@ -1,15 +1,15 @@
-import blog1 from "../assets/images/blog/blog1.jpg";
-import blog2 from "../assets/images/blog/blog2.jpg";
-import blog3 from "../assets/images/blog/blog3.jpg";
-import blog6 from "../assets/images/blog/blog6.jpg";
-import blog7 from "../assets/images/blog/blog7.jpg";
-import blog8 from "../assets/images/blog/blog8.jpg";
-import blog9 from "../assets/images/blog/blog9.jpg";
-import blog10 from "../assets/images/blog/blog10.jpg";
-import blog11 from "../assets/images/blog/blog11.jpg";
-import blogDetail1 from "../assets/images/blog/blog-detail1.jpg";
-import blogDetail2 from "../assets/images/blog/blog-detail2.jpg";
-import blogDetail3 from "../assets/images/blog/blog-detail3.jpg";
+import blog1 from "../public/blog/blog1.jpg";
+import blog2 from "../public/blog/blog2.jpg";
+import blog3 from "../public/blog/blog3.jpg";
+import blog6 from "../public/blog/blog6.jpg";
+import blog7 from "../public/blog/blog7.jpg";
+import blog8 from "../public/blog/blog8.jpg";
+import blog9 from "../public/blog/blog9.jpg";
+import blog10 from "../public/blog/blog10.jpg";
+import blog11 from "../public/blog/blog11.jpg";
+import blogDetail1 from "../public/blog/blog-detail1.jpg";
+import blogDetail2 from "../public/blog/blog-detail2.jpg";
+import blogDetail3 from "../public/blog/blog-detail3.jpg";
 
 export const blogs = [
   {

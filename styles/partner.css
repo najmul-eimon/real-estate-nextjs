@@ -32,7 +32,7 @@ partner CSS
   opacity: 1;
 }
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 8px;
+  margin: 0 8px !important;
 }
 
 .partner .swiper-pagination-bullets.swiper-pagination-horizontal {

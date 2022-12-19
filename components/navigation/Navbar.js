@@ -1,6 +1,7 @@
-import Link from 'next/link';
 import { useContext } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import {BsChevronDown} from 'react-icons/bs';
 import {IoMdClose} from 'react-icons/io';
 import { SaveToLocalContext } from '../layout/Layout';
@@ -9,6 +10,7 @@ import logo from '../../public/logo.png';
 const Navbar = () => {
   const categories = ["appartment", "land", "house", "villa", "luxuary home", "office", "single family"]; 
   const {showNav, setShowNav, setCategoryLocal} = useContext(SaveToLocalContext);
+  const router = useRouter();
 
   return (
     <header>
@@ -44,7 +46,7 @@ const Navbar = () => {
                     </div>
                     <ul className="nav-bar">
                       <li className="nav-item">
-                        <Link className="nav-link" href="/" onClick={() => setShowNav(false)}>Home</Link>
+                        <Link className={`nav-link ${router.pathname == "/" ? "active" : ""}`} href="/" onClick={() => setShowNav(false)}>Home</Link>
                       </li>
                       <li className="nav-item">
                         <Link className="nav-link" href="/property" role="button" onClick={() => setCategoryLocal("all")}>

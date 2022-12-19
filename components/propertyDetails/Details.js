@@ -6,7 +6,7 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import InnerSidebar from "../shared/InnerSidebar";
 import PropertyModal from "../shared/PropertyModal";
-import "../../assets/css/property-details.css";
+import Image from "next/image";
 
 const Details = ({ data }) => {
   const { name, address, location, date, price, gallery, description, propertyDetails, video, floorPlans } = data;
@@ -55,7 +55,7 @@ const Details = ({ data }) => {
                   <div className="grid">
                     {gallery?.map((img, index) => (
                       <div key={index} className="single-img">
-                        <img src={img} alt="" />
+                        <Image src={img} alt="Property images"/>
                       </div>
                     ))}
                   </div>
@@ -104,7 +104,7 @@ const Details = ({ data }) => {
                         <div className="row detail-row">
                           <div className="col-xl-7">
                             <div className="image">
-                              <img src={image} alt="" />
+                              <Image src={image} alt="Property tab images"/>
                             </div>
                           </div>
                           <div className="col-xl-5">
@@ -125,7 +125,7 @@ const Details = ({ data }) => {
                     <h4>Video</h4>
                   </div>
                   <div className="video">
-                    <img src={video} alt="" />
+                    <Image src={video} alt="Property video images"/>
                     <div className="overlay">
                       <button type="button" onClick={handleShow}><FaPlay className="play-icon" /></button>
                     </div>

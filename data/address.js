@@ -1,5 +1,5 @@
-import address1 from '../assets/images/contact/img1.jpg';
-import address2 from '../assets/images/contact/img2.jpg';
+import address1 from '../public/contact/img1.jpg';
+import address2 from '../public/contact/img2.jpg';
 
 export const address = [
   {

@@ -1,13 +1,12 @@
-import React from 'react';
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
-import logo1 from "../../assets/images/partner/logo1.png";
-import logo2 from "../../assets/images/partner/logo2.png";
-import logo3 from "../../assets/images/partner/logo3.png";
-import logo4 from "../../assets/images/partner/logo4.png";
-import '../../assets/css/partner.css';
+import logo1 from "../../public/partner/logo1.png";
+import logo2 from "../../public/partner/logo2.png";
+import logo3 from "../../public/partner/logo3.png";
+import logo4 from "../../public/partner/logo4.png";
 
 const Partner = () => {
   const partners = [logo1, logo2, logo3, logo4];
@@ -22,39 +21,41 @@ const Partner = () => {
             </div>
           </div>
           <div className="col-md-12">
-            <Swiper 
-              pagination={{clickable:true}} 
-              modules={[Pagination]} loop={true}
+            <Swiper
+              pagination={{ clickable: true }}
+              modules={[Pagination]}
+              loop={true}
               spaceBetween={24}
-              autoplay= {true}
+              autoplay={true}
               slidesPerGroup={1}
-              breakpoints= {{
+              breakpoints={{
                 576: {
-                  slidesPerView: 2
+                  slidesPerView: 2,
                 },
                 768: {
                   slidesPerView: 3,
                 },
                 992: {
                   slidesPerView: 4,
-                }
-              }} 
-              className="partner-slider">
-                {
-                  partners.map((item, index) => 
+                },
+              }}
+              className="partner-slider"
+            >
+              {partners.map((item, index) => {
+                  return (
                     <SwiperSlide key={index}>
                       <div className="item">
-                        <img src={item} alt="" />
+                        <Image src={item} alt="Partner Logo" />
                       </div>
                     </SwiperSlide>
-                  )
-                }
+                  );
+                })}
             </Swiper>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Partner
+export default Partner;
