@@ -1,10 +1,10 @@
-import React from 'react'
 import InnerSidebar from '../shared/InnerSidebar';
 import {IoCalendarNumberOutline} from 'react-icons/io5';
-import '../../assets/css/blog.css';
+import Image from 'next/image';
 
 const Details = ({data}) => {
-  const {date, tags, title, description, gallery, subtitle} = data;
+  const {date, tags, title, description, mainImage, gallery, subtitle} = data;
+
   return (
     <section className="blog-details">
       <div className="container">
@@ -38,7 +38,7 @@ const Details = ({data}) => {
                   </div>
 
                   <div className="image">
-                    <img src={gallery?.slice(0,1)} alt=""/>
+                    <Image src={mainImage} alt="Blog Image"/>
                   </div>
 
                   <h3>{subtitle}</h3>
@@ -48,9 +48,9 @@ const Details = ({data}) => {
                   
                   <div className="img">
                     {
-                      gallery?.slice(1).map((img, index) => 
+                      gallery?.map((img, index) => 
                       <div key={index} className="image">
-                        <img src={img} alt=""/>
+                        <Image src={img} alt="Blog image"/>
                       </div>
                       )
                     }

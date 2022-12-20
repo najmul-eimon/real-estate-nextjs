@@ -22,10 +22,11 @@ const RelatedProperties = () => {
               </div>
             </div>
             <div className="col-md-12">
-              <Swiper 
+              <Swiper
                 loop= {true}
                 spaceBetween= {24}
                 autoplay= {true}
+                slidesPerView="auto"
                 slidesPerGroup= {1}
                 breakpoints= {{
                   576: {

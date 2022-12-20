@@ -11,6 +11,8 @@ const Navbar = () => {
   const categories = ["appartment", "land", "house", "villa", "luxuary home", "office", "single family"]; 
   const {showNav, setShowNav, setCategoryLocal} = useContext(SaveToLocalContext);
   const router = useRouter();
+  const fullPath = router.pathname.split('/');
+  const basePath = fullPath[1];
 
   return (
     <header>
@@ -19,13 +21,17 @@ const Navbar = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="row align-items-center">
+
+                {/* logo */}
                 <div className="col-7 col-md-4 col-lg-3 col-xl-2">
                   <Link className="navbar-brand" href="/">
                     <Image src={logo} alt="Picture of logo"/>
                   </Link>
                 </div>
 
+                {/* main menu */}
                 <div className="col-5 col-md-8 col-lg-9 col-xl-10">
+                  {/* mobile screen toggle button */}
                   <div className="d-flex align-items-center justify-content-end">
                     <button type="button" className="nav-toggler" id="nav-toggler" onClick={() => setShowNav(true)}>
                       <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +40,10 @@ const Navbar = () => {
                     </button>
                   </div>
 
+                  {/* menu block */}
                   <div className={showNav ? 'main-nav show-nav' : 'main-nav'}>
+
+                    {/* mobile screen header */}
                     <div className="mobile-header">
                       <Link className="navbar-brand" href="/">
                         <Image src={logo} alt="Picture of logo"/>
@@ -44,12 +53,14 @@ const Navbar = () => {
                         <IoMdClose/>
                       </button>
                     </div>
+
+                    {/* menu list */}
                     <ul className="nav-bar">
                       <li className="nav-item">
-                        <Link className={`nav-link ${router.pathname == "/" ? "active" : ""}`} href="/" onClick={() => setShowNav(false)}>Home</Link>
+                        <Link className={`nav-link ${basePath == "" ? "active" : ""}`} href="/" onClick={() => setShowNav(false)}>Home</Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" href="/property" role="button" onClick={() => setCategoryLocal("all")}>
+                        <Link className={`nav-link ${basePath == "property" ? "active" : ""}`} href="/property" role="button" onClick={() => setCategoryLocal("all")}>
                           Property <BsChevronDown className='arrow-icon'/>
                         </Link>
                         <ul className="dropdown-submenu custom-scrollbar">
@@ -59,13 +70,13 @@ const Navbar = () => {
                         </ul>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" href="/about" onClick={() => setShowNav(false)}>About</Link>
+                        <Link className={`nav-link ${basePath == "about" ? "active" : ""}`} href="/about" onClick={() => setShowNav(false)}>About</Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" href="/blog" onClick={() => setShowNav(false)}>Blog</Link>
+                        <Link className={`nav-link ${basePath == "blog" ? "active" : ""}`} href="/blog" onClick={() => setShowNav(false)}>Blog</Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" href="/contact" onClick={() => setShowNav(false)}>Contact us</Link>
+                        <Link className={`nav-link ${basePath == "contact" ? "active" : ""}`} href="/contact" onClick={() => setShowNav(false)}>Contact us</Link>
                       </li>
                     </ul>
                   </div>

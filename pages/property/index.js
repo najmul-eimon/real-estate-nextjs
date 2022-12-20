@@ -3,7 +3,7 @@ import Properties from '../../components/properties/Properties';
 import Breadcrumb from '../../components/shared/Breadcrumb';
 import Filter from '../../components/shared/Filter';
 
-const index = () => {
+const Property = () => {
   return (
     <>
       <Head>
@@ -29,4 +29,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Property

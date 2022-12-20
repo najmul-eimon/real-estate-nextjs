@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import {FaStar} from 'react-icons/fa';
 import {FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube} from 'react-icons/fa';
 import {IoCalendarNumberOutline} from 'react-icons/io5';
@@ -7,7 +8,6 @@ import ContactFrom from '../../components/contact/ContactForm';
 import Filter from '../../components/shared/Filter';
 import {properties} from '../../data/property';
 import {blogs} from '../../data/blog';
-import Image from 'next/image';
 
 const InnerSidebar = ({data}) => {
   return (
@@ -76,7 +76,7 @@ const InnerSidebar = ({data}) => {
               <div className="others">
                 <div className="d-flex align-items-center justify-content-between">
                   <span className="d-flex align-items-center text-truncate"><IoCalendarNumberOutline className='date-icon'/>{date}</span>
-                  {/* <Link href={`/blog/blog-details/${id}`} className="blog-details-btn" onClick={window.scrollTo(0, 0)}><HiArrowUpRight className='details-icon'/></Link> */}
+                  <Link href={`/blog/${id}`} className="blog-details-btn"><HiArrowUpRight className='details-icon'/></Link>
                 </div>
                 <h4>{title.length > 26 ? title.substring(0, 26) + "..." : title}</h4>
               </div>

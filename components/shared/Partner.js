@@ -27,6 +27,7 @@ const Partner = () => {
               loop={true}
               spaceBetween={24}
               autoplay={true}
+              slidesPerView="auto"
               slidesPerGroup={1}
               breakpoints={{
                 576: {
@@ -41,7 +42,7 @@ const Partner = () => {
               }}
               className="partner-slider"
             >
-              {partners.map((item, index) => {
+              {partners?.map((item, index) => {
                   return (
                     <SwiperSlide key={index}>
                       <div className="item">
@@ -49,7 +50,8 @@ const Partner = () => {
                       </div>
                     </SwiperSlide>
                   );
-                })}
+                })
+              }
             </Swiper>
           </div>
         </div>

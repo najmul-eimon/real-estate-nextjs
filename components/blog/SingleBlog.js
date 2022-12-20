@@ -14,7 +14,7 @@ const SingleBlog = ({blog}) => {
       <div className="content">
         <div className="d-flex align-items-center justify-content-between">
           <span><IoCalendarNumberOutline className='date-icon'/> {date}</span>
-          <Link href={`/blog/blog-details/${id}`} className="details-btn"><HiArrowUpRight className='details-icon'/></Link>
+          <Link href={`/blog/${id}`} className="details-btn"><HiArrowUpRight className='details-icon'/></Link>
         </div>
         <div className="blog-title">
           <h3>{title.length > 29 ? title.substring(0,29) + "..." : title}</h3>
