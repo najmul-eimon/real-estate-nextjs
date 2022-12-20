@@ -3,6 +3,14 @@ General CSS
 =============================================================*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;800;900&display=swap');
 
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('../public/NunitoSans-Regular.ttf');
+  font-style: medium;
+  font-weight: normal;
+  font-display: swap;
+}
+
 :root {
   --primary: #16A4AD;
   --primary-text: #1C213C;
