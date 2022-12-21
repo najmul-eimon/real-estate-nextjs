@@ -1,10 +1,7 @@
-import address1 from '../public/contact/img1.jpg';
-import address2 from '../public/contact/img2.jpg';
-
 export const address = [
   {
     id: "1",
-    image: address1,
+    image: "/contact/img1.jpg",
     city: "New York",
     area: "1545 Broadway",
     location: "New York, NY 10036",
@@ -13,7 +10,7 @@ export const address = [
   },
   {
     id: '2',
-    image: address2,
+    image: "/contact/img2.jpg",
     city: "Los Angeles",
     area: "1545 Broadway",
     location: "Los Angeles, LA 10036",

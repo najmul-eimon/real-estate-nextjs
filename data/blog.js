@@ -1,16 +1,3 @@
-import blog1 from "../public/blog/blog1.jpg";
-import blog2 from "../public/blog/blog2.jpg";
-import blog3 from "../public/blog/blog3.jpg";
-import blog6 from "../public/blog/blog6.jpg";
-import blog7 from "../public/blog/blog7.jpg";
-import blog8 from "../public/blog/blog8.jpg";
-import blog9 from "../public/blog/blog9.jpg";
-import blog10 from "../public/blog/blog10.jpg";
-import blog11 from "../public/blog/blog11.jpg";
-import blogDetail1 from "../public/blog/blog-detail1.jpg";
-import blogDetail2 from "../public/blog/blog-detail2.jpg";
-import blogDetail3 from "../public/blog/blog-detail3.jpg";
-
 export const blogs = [
   {
     id: "1",
@@ -38,9 +25,9 @@ export const blogs = [
       }
     ],
     status: "recent",
-    image: blog1,
-    mainImage: blogDetail1,
-    gallery: [blogDetail2, blogDetail3]
+    image: "/blog/blog1.jpg",
+    mainImage: "/blog/blog-detail1.jpg",
+    gallery: ["/blog/blog-detail2.jpg", "/blog/blog-detail3.jpg"]
   },
   {
     id: "2",
@@ -68,9 +55,9 @@ export const blogs = [
       }
     ],
     status: "recent",
-    image: blog2,
-    mainImage: blogDetail1,
-    gallery: [blogDetail2, blogDetail3]
+    image: "/blog/blog2.jpg",
+    mainImage: "/blog/blog-detail1.jpg",
+    gallery: ["/blog/blog-detail2.jpg", "/blog/blog-detail3.jpg"]
   },
   {
     id: "3",
@@ -98,9 +85,9 @@ export const blogs = [
       }
     ],
     status: "recent",
-    image: blog3,
-    mainImage: blogDetail1,
-    gallery: [blogDetail2, blogDetail3]
+    image: "/blog/blog3.jpg",
+    mainImage: "/blog/blog-detail1.jpg",
+    gallery: ["/blog/blog-detail2.jpg", "/blog/blog-detail3.jpg"]
   },
   {
     id: "4",
@@ -128,9 +115,9 @@ export const blogs = [
       }
     ],
     status: "old",
-    image: blog10,
-    mainImage: blogDetail1,
-    gallery: [blogDetail2, blogDetail3]
+    image: "/blog/blog10.jpg",
+    mainImage: "/blog/blog-detail1.jpg",
+    gallery: ["/blog/blog-detail2.jpg", "/blog/blog-detail3.jpg"]
   },
   {
     id: "5",
@@ -158,9 +145,9 @@ export const blogs = [
       }
     ],
     status: "old",
-    image: blog11,
-    mainImage: blogDetail1,
-    gallery: [blogDetail2, blogDetail3]
+    image: "/blog/blog11.jpg",
+    mainImage: "/blog/blog-detail1.jpg",
+    gallery: ["/blog/blog-detail2.jpg", "/blog/blog-detail3.jpg"]
   },
   {
     id: "6",
@@ -188,9 +175,9 @@ export const blogs = [
       }
     ],
     status: "old",
-    image: blog6,
-    mainImage: blogDetail1,
-    gallery: [blogDetail2, blogDetail3]
+    image: "/blog/blog6.jpg",
+    mainImage: "/blog/blog-detail1.jpg",
+    gallery: ["/blog/blog-detail2.jpg", "/blog/blog-detail3.jpg"]
   },
   {
     id: "7",
@@ -218,9 +205,9 @@ export const blogs = [
       }
     ],
     status: "old",
-    image: blog7,
-    mainImage: blogDetail1,
-    gallery: [blogDetail2, blogDetail3]
+    image: "/blog/blog7.jpg",
+    mainImage: "/blog/blog-detail1.jpg",
+    gallery: ["/blog/blog-detail2.jpg", "/blog/blog-detail3.jpg"]
   },
   {
     id: "8",
@@ -248,9 +235,9 @@ export const blogs = [
       }
     ],
     status: "old",
-    image: blog8,
-    mainImage: blogDetail1,
-    gallery: [blogDetail2, blogDetail3]
+    image: "/blog/blog8.jpg",
+    mainImage: "/blog/blog-detail1.jpg",
+    gallery: ["/blog/blog-detail2.jpg", "/blog/blog-detail3.jpg"]
   },
   {
     id: "9",
@@ -278,8 +265,8 @@ export const blogs = [
       }
     ],
     status: "old",
-    image: blog9,
-    mainImage: blogDetail1,
-    gallery: [blogDetail2, blogDetail3]
+    image: "/blog/blog9.jpg",
+    mainImage: "/blog/blog-detail1.jpg",
+    gallery: ["/blog/blog-detail2.jpg", "/blog/blog-detail3.jpg"]
   }
 ]

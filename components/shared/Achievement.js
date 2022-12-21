@@ -20,8 +20,7 @@ const Achievement = () => {
                 achievements.map(({id, icon, counter, title}) => 
                   <div key={id} className="single text-center">
                     <div className="icon">
-                      {/* <img src={icon} alt=""/> */}
-                      <Image src={icon} alt="Achievement icons"/>
+                      <Image src={icon} alt="Achievement icons" width={88} height={88}/>
                     </div>
                     <CountUp end={counter} redraw={true}>
                       {({ countUpRef, start }) => (

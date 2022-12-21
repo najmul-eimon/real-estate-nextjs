@@ -1,27 +1,3 @@
-import property1 from '../public/properties/img1.jpg';
-import property2 from '../public/properties/img2.jpg';
-import property3 from '../public/properties/img3.jpg';
-import property4 from '../public/properties/img4.jpg';
-import property5 from '../public/properties/img5.jpg';
-import property6 from '../public/properties/img6.jpg';
-import property7 from '../public/properties/img7.jpg';
-import property8 from '../public/properties/img8.jpg';
-import property9 from '../public/properties/img9.jpg';
-import property10 from '../public/properties/img10.jpg';
-import property11 from '../public/properties/img11.jpg';
-import property12 from '../public/properties/img12.jpg';
-import video from '../public/video.jpg';
-import img1 from '../public/property-details/img1.jpg';
-import img2 from '../public/property-details/img2.jpg';
-import img3 from '../public/property-details/img3.jpg';
-import img4 from '../public/property-details/img4.jpg';
-import img5 from '../public/property-details/img5.jpg';
-import img6 from '../public/property-details/img6.jpg';
-import floor1 from '../public/floor-plans/first.png';
-import floor2 from '../public/floor-plans/second.png';
-import floor3 from '../public/floor-plans/third.png';
-import floor4 from '../public/floor-plans/fourth.png';
-
 export const properties = [
   {
     id: "1",
@@ -39,7 +15,7 @@ export const properties = [
     room: "single room",
     bedRoom: 3,
     feature: "duplex",
-    image: property1,
+    image: "/properties/img1.jpg",
     description: [
       "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
@@ -47,10 +23,15 @@ export const properties = [
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
       "Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes."
     ],
-    video: video,
+    video: "/video.jpg",
     rating: 5,
     gallery: [
-      img1, img4, img5, img2, img3, img6
+      "/property-details/img1.jpg", 
+      "/property-details/img4.jpg", 
+      "/property-details/img5.jpg", 
+      "/property-details/img2.jpg", 
+      "/property-details/img3.jpg", 
+      "/property-details/img6.jpg"
     ],
     propertyDetails:[
       {
@@ -150,25 +131,25 @@ export const properties = [
         name: "first",
         floor: "First Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor1
+        image: "/floor-plans/first.png"
       },
       {
         name: "second",
         floor: "Second Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor2
+        image: "/floor-plans/second.png"
       },
       {
         name: "third",
         floor: "Third Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor3
+        image: "/floor-plans/third.png"
       },
       {
         name: "top",
         floor: "Top Garden",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor4
+        image: "/floor-plans/fourth.png"
       }
     ]
   },
@@ -189,7 +170,7 @@ export const properties = [
     room: "single room",
     bedRoom: 3,
     feature: "duplex",
-    image: property2,
+    image: "/properties/img2.jpg",
     description: [
       "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
@@ -197,10 +178,15 @@ export const properties = [
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
       "Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes."
     ],
-    video: video,
+    video: "/video.jpg",
     rating: 5,
     gallery: [
-      img1, img4, img5, img2, img3, img6
+      "/property-details/img1.jpg", 
+      "/property-details/img4.jpg", 
+      "/property-details/img5.jpg", 
+      "/property-details/img2.jpg", 
+      "/property-details/img3.jpg", 
+      "/property-details/img6.jpg"
     ],
     propertyDetails:[
       {
@@ -300,25 +286,25 @@ export const properties = [
         name: "first",
         floor: "First Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor1
+        image: "/floor-plans/first.png"
       },
       {
         name: "second",
         floor: "Second Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor2
+        image: "/floor-plans/second.png"
       },
       {
         name: "third",
         floor: "Third Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor3
+        image: "/floor-plans/third.png"
       },
       {
         name: "top",
         floor: "Top Garden",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor4
+        image: "/floor-plans/fourth.png"
       }
     ]
   },
@@ -339,7 +325,7 @@ export const properties = [
     room: "single room",
     bedRoom: 3,
     feature: "duplex",
-    image: property3,
+    image: "/properties/img3.jpg",
     description: [
       "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
@@ -347,10 +333,15 @@ export const properties = [
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
       "Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes."
     ],
-    video: video,
+    video: "/video.jpg",
     rating: 5,
     gallery: [
-      img1, img4, img5, img2, img3, img6
+      "/property-details/img1.jpg", 
+      "/property-details/img4.jpg", 
+      "/property-details/img5.jpg", 
+      "/property-details/img2.jpg", 
+      "/property-details/img3.jpg", 
+      "/property-details/img6.jpg"
     ],
     propertyDetails:[
       {
@@ -450,25 +441,25 @@ export const properties = [
         name: "first",
         floor: "First Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor1
+        image: "/floor-plans/first.png"
       },
       {
         name: "second",
         floor: "Second Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor2
+        image: "/floor-plans/second.png"
       },
       {
         name: "third",
         floor: "Third Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor3
+        image: "/floor-plans/third.png"
       },
       {
         name: "top",
         floor: "Top Garden",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor4
+        image: "/floor-plans/fourth.png"
       }
     ]
   },
@@ -489,7 +480,7 @@ export const properties = [
     room: "single room",
     bedRoom: 3,
     feature: "duplex",
-    image: property4,
+    image: "/properties/img4.jpg",
     description: [
       "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
@@ -497,10 +488,15 @@ export const properties = [
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
       "Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes."
     ],
-    video: video,
+    video: "/video.jpg",
     rating: 5,
     gallery: [
-      img1, img4, img5, img2, img3, img6
+      "/property-details/img1.jpg", 
+      "/property-details/img4.jpg", 
+      "/property-details/img5.jpg", 
+      "/property-details/img2.jpg", 
+      "/property-details/img3.jpg", 
+      "/property-details/img6.jpg"
     ],
     propertyDetails:[
       {
@@ -600,25 +596,25 @@ export const properties = [
         name: "first",
         floor: "First Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor1
+        image: "/floor-plans/first.png"
       },
       {
         name: "second",
         floor: "Second Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor2
+        image: "/floor-plans/second.png"
       },
       {
         name: "third",
         floor: "Third Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor3
+        image: "/floor-plans/third.png"
       },
       {
         name: "top",
         floor: "Top Garden",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor4
+        image: "/floor-plans/fourth.png"
       }
     ]
   },
@@ -639,7 +635,7 @@ export const properties = [
     room: "single room",
     bedRoom: 3,
     feature: "duplex",
-    image: property5,
+    image: "/properties/img5.jpg",
     description: [
       "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
@@ -647,10 +643,15 @@ export const properties = [
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
       "Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes."
     ],
-    video: video,
+    video: "/video.jpg",
     rating: 5,
     gallery: [
-      img1, img4, img5, img2, img3, img6
+      "/property-details/img1.jpg", 
+      "/property-details/img4.jpg", 
+      "/property-details/img5.jpg", 
+      "/property-details/img2.jpg", 
+      "/property-details/img3.jpg", 
+      "/property-details/img6.jpg"
     ],
     propertyDetails:[
       {
@@ -750,25 +751,25 @@ export const properties = [
         name: "first",
         floor: "First Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor1
+        image: "/floor-plans/first.png"
       },
       {
         name: "second",
         floor: "Second Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor2
+        image: "/floor-plans/second.png"
       },
       {
         name: "third",
         floor: "Third Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor3
+        image: "/floor-plans/third.png"
       },
       {
         name: "top",
         floor: "Top Garden",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor4
+        image: "/floor-plans/fourth.png"
       }
     ]
   },
@@ -789,7 +790,7 @@ export const properties = [
     room: "single room",
     bedRoom: 3,
     feature: "duplex",
-    image: property6,
+    image: "/properties/img6.jpg",
     description: [
       "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
@@ -797,10 +798,15 @@ export const properties = [
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
       "Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes."
     ],
-    video: video,
+    video: "/video.jpg",
     rating: 5,
     gallery: [
-      img1, img4, img5, img2, img3, img6
+      "/property-details/img1.jpg", 
+      "/property-details/img4.jpg", 
+      "/property-details/img5.jpg", 
+      "/property-details/img2.jpg", 
+      "/property-details/img3.jpg", 
+      "/property-details/img6.jpg"
     ],
     propertyDetails:[
       {
@@ -900,25 +906,25 @@ export const properties = [
         name: "first",
         floor: "First Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor1
+        image: "/floor-plans/first.png"
       },
       {
         name: "second",
         floor: "Second Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor2
+        image: "/floor-plans/second.png"
       },
       {
         name: "third",
         floor: "Third Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor3
+        image: "/floor-plans/third.png"
       },
       {
         name: "top",
         floor: "Top Garden",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor4
+        image: "/floor-plans/fourth.png"
       }
     ]
   },
@@ -939,7 +945,7 @@ export const properties = [
     room: "double room",
     bedRoom: 3,
     feature: "delux",
-    image: property7,
+    image: "/properties/img7.jpg",
     description: [
       "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
@@ -947,10 +953,15 @@ export const properties = [
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
       "Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes."
     ],
-    video: video,
+    video: "/video.jpg",
     rating: 5,
     gallery: [
-      img1, img4, img5, img2, img3, img6
+      "/property-details/img1.jpg", 
+      "/property-details/img4.jpg", 
+      "/property-details/img5.jpg", 
+      "/property-details/img2.jpg", 
+      "/property-details/img3.jpg", 
+      "/property-details/img6.jpg"
     ],
     propertyDetails:[
       {
@@ -1050,25 +1061,25 @@ export const properties = [
         name: "first",
         floor: "First Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor1
+        image: "/floor-plans/first.png"
       },
       {
         name: "second",
         floor: "Second Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor2
+        image: "/floor-plans/second.png"
       },
       {
         name: "third",
         floor: "Third Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor3
+        image: "/floor-plans/third.png"
       },
       {
         name: "top",
         floor: "Top Garden",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor4
+        image: "/floor-plans/fourth.png"
       }
     ]
   },
@@ -1089,7 +1100,7 @@ export const properties = [
     room: "double room",
     bedRoom: 3,
     feature: "delux",
-    image: property8,
+    image: "/properties/img8.jpg",
     description: [
       "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
@@ -1097,10 +1108,15 @@ export const properties = [
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
       "Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes."
     ],
-    video: video,
+    video: "/video.jpg",
     rating: 5,
     gallery: [
-      img1, img4, img5, img2, img3, img6
+      "/property-details/img1.jpg", 
+      "/property-details/img4.jpg", 
+      "/property-details/img5.jpg", 
+      "/property-details/img2.jpg", 
+      "/property-details/img3.jpg", 
+      "/property-details/img6.jpg"
     ],
     propertyDetails:[
       {
@@ -1200,25 +1216,25 @@ export const properties = [
         name: "first",
         floor: "First Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor1
+        image: "/floor-plans/first.png"
       },
       {
         name: "second",
         floor: "Second Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor2
+        image: "/floor-plans/second.png"
       },
       {
         name: "third",
         floor: "Third Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor3
+        image: "/floor-plans/third.png"
       },
       {
         name: "top",
         floor: "Top Garden",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor4
+        image: "/floor-plans/fourth.png"
       }
     ]
   },
@@ -1239,7 +1255,7 @@ export const properties = [
     room: "double room",
     bedRoom: 3,
     feature: "delux",
-    image: property9,
+    image: "/properties/img9.jpg",
     description: [
       "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
@@ -1247,10 +1263,15 @@ export const properties = [
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
       "Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes."
     ],
-    video: video,
+    video: "/video.jpg",
     rating: 5,
     gallery: [
-      img1, img4, img5, img2, img3, img6
+      "/property-details/img1.jpg", 
+      "/property-details/img4.jpg", 
+      "/property-details/img5.jpg", 
+      "/property-details/img2.jpg", 
+      "/property-details/img3.jpg", 
+      "/property-details/img6.jpg"
     ],
     propertyDetails:[
       {
@@ -1350,25 +1371,25 @@ export const properties = [
         name: "first",
         floor: "First Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor1
+        image: "/floor-plans/first.png"
       },
       {
         name: "second",
         floor: "Second Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor2
+        image: "/floor-plans/second.png"
       },
       {
         name: "third",
         floor: "Third Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor3
+        image: "/floor-plans/third.png"
       },
       {
         name: "top",
         floor: "Top Garden",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor4
+        image: "/floor-plans/fourth.png"
       }
     ]
   },
@@ -1389,7 +1410,7 @@ export const properties = [
     room: "double room",
     bedRoom: 3,
     feature: "delux",
-    image: property10,
+    image: "/properties/img10.jpg",
     description: [
       "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
@@ -1397,10 +1418,15 @@ export const properties = [
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
       "Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes."
     ],
-    video: video,
+    video: "/video.jpg",
     rating: 5,
     gallery: [
-      img1, img4, img5, img2, img3, img6
+      "/property-details/img1.jpg", 
+      "/property-details/img4.jpg", 
+      "/property-details/img5.jpg", 
+      "/property-details/img2.jpg", 
+      "/property-details/img3.jpg", 
+      "/property-details/img6.jpg"
     ],
     propertyDetails:[
       {
@@ -1500,25 +1526,25 @@ export const properties = [
         name: "first",
         floor: "First Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor1
+        image: "/floor-plans/first.png"
       },
       {
         name: "second",
         floor: "Second Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor2
+        image: "/floor-plans/second.png"
       },
       {
         name: "third",
         floor: "Third Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor3
+        image: "/floor-plans/third.png"
       },
       {
         name: "top",
         floor: "Top Garden",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor4
+        image: "/floor-plans/fourth.png"
       }
     ]
   },
@@ -1539,7 +1565,7 @@ export const properties = [
     room: "double room",
     bedRoom: 3,
     feature: "delux",
-    image: property11,
+    image: "/properties/img11.jpg",
     description: [
       "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
@@ -1547,10 +1573,15 @@ export const properties = [
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
       "Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes."
     ],
-    video: video,
+    video: "/video.jpg",
     rating: 5,
     gallery: [
-      img1, img4, img5, img2, img3, img6
+      "/property-details/img1.jpg", 
+      "/property-details/img4.jpg", 
+      "/property-details/img5.jpg", 
+      "/property-details/img2.jpg", 
+      "/property-details/img3.jpg", 
+      "/property-details/img6.jpg"
     ],
     propertyDetails:[
       {
@@ -1650,25 +1681,25 @@ export const properties = [
         name: "first",
         floor: "First Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor1
+        image: "/floor-plans/first.png"
       },
       {
         name: "second",
         floor: "Second Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor2
+        image: "/floor-plans/second.png"
       },
       {
         name: "third",
         floor: "Third Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor3
+        image: "/floor-plans/third.png"
       },
       {
         name: "top",
         floor: "Top Garden",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor4
+        image: "/floor-plans/fourth.png"
       }
     ]
   },
@@ -1689,7 +1720,7 @@ export const properties = [
     room: "double room",
     bedRoom: 3,
     feature: "delux",
-    image: property12,
+    image: "/properties/img12.jpg",
     description: [
       "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
@@ -1697,10 +1728,15 @@ export const properties = [
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
       "Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes."
     ],
-    video: video,
+    video: "/video.jpg",
     rating: 5,
     gallery: [
-      img1, img4, img5, img2, img3, img6
+      "/property-details/img1.jpg", 
+      "/property-details/img4.jpg", 
+      "/property-details/img5.jpg", 
+      "/property-details/img2.jpg", 
+      "/property-details/img3.jpg", 
+      "/property-details/img6.jpg"
     ],
     propertyDetails:[
       {
@@ -1800,25 +1836,25 @@ export const properties = [
         name: "first",
         floor: "First Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor1
+        image: "/floor-plans/first.png"
       },
       {
         name: "second",
         floor: "Second Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor2
+        image: "/floor-plans/second.png"
       },
       {
         name: "third",
         floor: "Third Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor3
+        image: "/floor-plans/third.png"
       },
       {
         name: "top",
         floor: "Top Garden",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor4
+        image: "/floor-plans/fourth.png"
       }
     ]
   },
@@ -1839,7 +1875,7 @@ export const properties = [
     room: "many room",
     bedRoom: 3,
     feature: "adjoining",
-    image: property2,
+    image: "/properties/img2.jpg",
     description: [
       "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
@@ -1847,10 +1883,15 @@ export const properties = [
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
       "Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes."
     ],
-    video: video,
+    video: "/video.jpg",
     rating: 5,
     gallery: [
-      img1, img4, img5, img2, img3, img6
+      "/property-details/img1.jpg", 
+      "/property-details/img4.jpg", 
+      "/property-details/img5.jpg", 
+      "/property-details/img2.jpg", 
+      "/property-details/img3.jpg", 
+      "/property-details/img6.jpg"
     ],
     propertyDetails:[
       {
@@ -1950,25 +1991,25 @@ export const properties = [
         name: "first",
         floor: "First Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor1
+        image: "/floor-plans/first.png"
       },
       {
         name: "second",
         floor: "Second Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor2
+        image: "/floor-plans/second.png"
       },
       {
         name: "third",
         floor: "Third Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor3
+        image: "/floor-plans/third.png"
       },
       {
         name: "top",
         floor: "Top Garden",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor4
+        image: "/floor-plans/fourth.png"
       }
     ]
   },
@@ -1989,7 +2030,7 @@ export const properties = [
     room: "many room",
     bedRoom: 3,
     feature: "adjoining",
-    image: property9,
+    image: "/properties/img9.jpg",
     description: [
       "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
@@ -1997,10 +2038,15 @@ export const properties = [
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
       "Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes."
     ],
-    video: video,
+    video: "/video.jpg",
     rating: 5,
     gallery: [
-      img1, img4, img5, img2, img3, img6
+      "/property-details/img1.jpg", 
+      "/property-details/img4.jpg", 
+      "/property-details/img5.jpg", 
+      "/property-details/img2.jpg", 
+      "/property-details/img3.jpg", 
+      "/property-details/img6.jpg"
     ],
     propertyDetails:[
       {
@@ -2100,25 +2146,25 @@ export const properties = [
         name: "first",
         floor: "First Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor1
+        image: "/floor-plans/first.png"
       },
       {
         name: "second",
         floor: "Second Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor2
+        image: "/floor-plans/second.png"
       },
       {
         name: "third",
         floor: "Third Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor3
+        image: "/floor-plans/third.png"
       },
       {
         name: "top",
         floor: "Top Garden",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor4
+        image: "/floor-plans/fourth.png"
       }
     ]
   },
@@ -2139,7 +2185,7 @@ export const properties = [
     room: "many room",
     bedRoom: 3,
     feature: "adjoining",
-    image: property3,
+    image: "/properties/img3.jpg",
     description: [
       "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
@@ -2147,10 +2193,15 @@ export const properties = [
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
       "Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes."
     ],
-    video: video,
+    video: "/video.jpg",
     rating: 5,
     gallery: [
-      img1, img4, img5, img2, img3, img6
+      "/property-details/img1.jpg", 
+      "/property-details/img4.jpg", 
+      "/property-details/img5.jpg", 
+      "/property-details/img2.jpg", 
+      "/property-details/img3.jpg", 
+      "/property-details/img6.jpg"
     ],
     propertyDetails:[
       {
@@ -2250,25 +2301,25 @@ export const properties = [
         name: "first",
         floor: "First Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor1
+        image: "/floor-plans/first.png"
       },
       {
         name: "second",
         floor: "Second Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor2
+        image: "/floor-plans/second.png"
       },
       {
         name: "third",
         floor: "Third Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor3
+        image: "/floor-plans/third.png"
       },
       {
         name: "top",
         floor: "Top Garden",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor4
+        image: "/floor-plans/fourth.png"
       }
     ]
   },
@@ -2289,7 +2340,7 @@ export const properties = [
     room: "many room",
     bedRoom: 3,
     feature: "adjoining",
-    image: property11,
+    image: "/properties/img11.jpg",
     description: [
       "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
@@ -2297,10 +2348,15 @@ export const properties = [
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
       "Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes."
     ],
-    video: video,
+    video: "/video.jpg",
     rating: 5,
     gallery: [
-      img1, img4, img5, img2, img3, img6
+      "/property-details/img1.jpg", 
+      "/property-details/img4.jpg", 
+      "/property-details/img5.jpg", 
+      "/property-details/img2.jpg", 
+      "/property-details/img3.jpg", 
+      "/property-details/img6.jpg"
     ],
     propertyDetails:[
       {
@@ -2400,25 +2456,25 @@ export const properties = [
         name: "first",
         floor: "First Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor1
+        image: "/floor-plans/first.png"
       },
       {
         name: "second",
         floor: "Second Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor2
+        image: "/floor-plans/second.png"
       },
       {
         name: "third",
         floor: "Third Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor3
+        image: "/floor-plans/third.png"
       },
       {
         name: "top",
         floor: "Top Garden",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor4
+        image: "/floor-plans/fourth.png"
       }
     ]
   },
@@ -2439,7 +2495,7 @@ export const properties = [
     room: "many room",
     bedRoom: 3,
     feature: "adjoining",
-    image: property7,
+    image: "/properties/img7.jpg",
     description: [
       "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
@@ -2447,10 +2503,15 @@ export const properties = [
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
       "Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes."
     ],
-    video: video,
+    video: "/video.jpg",
     rating: 5,
     gallery: [
-      img1, img4, img5, img2, img3, img6
+      "/property-details/img1.jpg", 
+      "/property-details/img4.jpg", 
+      "/property-details/img5.jpg", 
+      "/property-details/img2.jpg", 
+      "/property-details/img3.jpg", 
+      "/property-details/img6.jpg"
     ],
     propertyDetails:[
       {
@@ -2550,25 +2611,25 @@ export const properties = [
         name: "first",
         floor: "First Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor1
+        image: "/floor-plans/first.png"
       },
       {
         name: "second",
         floor: "Second Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor2
+        image: "/floor-plans/second.png"
       },
       {
         name: "third",
         floor: "Third Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor3
+        image: "/floor-plans/third.png"
       },
       {
         name: "top",
         floor: "Top Garden",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor4
+        image: "/floor-plans/fourth.png"
       }
     ]
   },
@@ -2589,7 +2650,7 @@ export const properties = [
     room: "many room",
     bedRoom: 3,
     feature: "adjoining",
-    image: property8,
+    image: "/properties/img8.jpg",
     description: [
       "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.",
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
@@ -2597,10 +2658,15 @@ export const properties = [
       "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
       "Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes."
     ],
-    video: video,
+    video: "/video.jpg",
     rating: 5,
     gallery: [
-      img1, img4, img5, img2, img3, img6
+      "/property-details/img1.jpg", 
+      "/property-details/img4.jpg", 
+      "/property-details/img5.jpg", 
+      "/property-details/img2.jpg", 
+      "/property-details/img3.jpg", 
+      "/property-details/img6.jpg"
     ],
     propertyDetails:[
       {
@@ -2700,25 +2766,25 @@ export const properties = [
         name: "first",
         floor: "First Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor1
+        image: "/floor-plans/first.png"
       },
       {
         name: "second",
         floor: "Second Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor2
+        image: "/floor-plans/second.png"
       },
       {
         name: "third",
         floor: "Third Floor",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor3
+        image: "/floor-plans/third.png"
       },
       {
         name: "top",
         floor: "Top Garden",
         details: "Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.",
-        image: floor4
+        image: "/floor-plans/fourth.png"
       }
     ]
   },

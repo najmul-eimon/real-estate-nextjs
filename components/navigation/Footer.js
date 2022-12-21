@@ -1,7 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import footerLogo from '../../public/footer-logo.png';
-import footerLogoWhite from '../../public/footer-logo-white.png';
 import {FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube, FaRegEnvelope} from 'react-icons/fa';
 import {IoCallOutline} from 'react-icons/io5';
 import {FiMapPin} from 'react-icons/fi';
@@ -18,7 +16,7 @@ const Footer = () => {
               <div className="footer-brand">
                 <div className="footer-content">
                   <Link href="/">
-                    <Image src={footerLogo} alt="Picture of logo"/>
+                    <Image src="/footer-logo.png" alt="Picture of logo" width={192} height={42}/>
                   </Link>
                   <p className="about">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam. Lorem ipsum dolor sit amet consecteturr adipiscing elit aliquam</p>
                   <ul className="footer-social d-flex align-items-center">
@@ -98,7 +96,7 @@ const Footer = () => {
               <p>Copywrite © 2023 - RealEstate. All rights reserved.</p>
 
               <Link href="/">
-                <Image src={footerLogoWhite} alt="Picture of logo"/>
+                <Image src="/footer-logo-white.png" alt="Picture of logo" width={192} height={42}/>
               </Link>
 
               <ul className="footer-links">

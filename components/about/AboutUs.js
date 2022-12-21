@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import about from '../../public/about/about.jpg';
-import video from '../../public/about/video.jpg';
 import { FaPlay } from "react-icons/fa";
 import PropertyModal from '../shared/PropertyModal';
 import Image from 'next/image';
@@ -19,9 +17,9 @@ const AboutUs = () => {
           <div className="row">
             <div className="col-md-6 col-lg-5">
               <div className="image position-relative">
-                <Image src={about} alt="About Image"/>
+                <Image src="/about/about.jpg" alt="About Image" width={440} height={602}/>
                 <div className="video">
-                  <Image src={video} alt="Video Image"/>
+                  <Image src="/about/video.jpg" alt="Video Image" width={365} height={236}/>
                   <button type="button" onClick={handleShow}><FaPlay className="play-icon" /></button>
                 </div>
               </div>

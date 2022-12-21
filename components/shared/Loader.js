@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../assets/css/common.css';
 
 const Loader = () => {
   return (

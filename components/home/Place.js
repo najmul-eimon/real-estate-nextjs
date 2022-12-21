@@ -21,7 +21,7 @@ const Place = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="title text-center">
-              <h2>Most Populer Place</h2>
+              <h2>Most Popular Place</h2>
             </div>
           </div>
           <div className="col-md-12">
@@ -31,7 +31,7 @@ const Place = () => {
                   places.map(({id, name, image}) => 
                     <div key={id} className="single-place">
                       <Link href="property" onClick={() => handlePlace(name)}>
-                        <Image src={image} alt="Place Image"/>
+                        <Image src={image} alt="Place Image" width={416} height={500}/>
                         <div className="overlay">
                           <p>{name} <BiChevronRightCircle className='place-icon'/></p>
                         </div>

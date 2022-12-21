@@ -1,6 +1,7 @@
 import { createContext, useState, useEffect } from 'react';
 import Navbar from '../../components/navigation/Navbar';
 import Footer from '../../components/navigation/Footer';
+import Loader from '../shared/Loader';
 
 
 export const SaveToLocalContext = createContext({});
@@ -50,6 +51,7 @@ const Layout = ({ children }) => {
         resetFilter,
         setResetFilter
       }}>
+      {loading && <Loader/>}
       <Navbar/>
         <main>
           {children}

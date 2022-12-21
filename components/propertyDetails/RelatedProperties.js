@@ -60,7 +60,7 @@ const RelatedProperties = () => {
                             </div>
                           </div>
                           <div className="image">
-                            <Image src={image} alt="Property Image"/>
+                            <Image src={image} alt="Property Image" width={330} height={233}/>
                           </div>
                           <p className="desc">{description.slice(0,1)}</p>
                         </div>

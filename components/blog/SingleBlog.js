@@ -9,7 +9,7 @@ const SingleBlog = ({blog}) => {
   return (
     <div key={id} className={id === "2" || id === "3" ? "single-blog small-blog" : "single-blog big-blog"}>
       <div className="image">
-        <Image src={image} alt="Blog image"/>
+        <Image src={image} alt="Blog image" width={648} height={226}/>
       </div>
       <div className="content">
         <div className="d-flex align-items-center justify-content-between">

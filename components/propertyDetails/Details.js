@@ -55,7 +55,7 @@ const Details = ({ data }) => {
                   <div className="grid">
                     {gallery?.map((img, index) => (
                       <div key={index} className="single-img">
-                        <Image src={img} alt="Property images"/>
+                        <Image src={img} alt="Property images" width={526} height={386}/>
                       </div>
                     ))}
                   </div>
@@ -104,7 +104,7 @@ const Details = ({ data }) => {
                         <div className="row detail-row">
                           <div className="col-xl-7">
                             <div className="image">
-                              <Image src={image} alt="Property tab images"/>
+                              <Image src={image} alt="Property tab images" width={389} height={309}/>
                             </div>
                           </div>
                           <div className="col-xl-5">
@@ -125,7 +125,7 @@ const Details = ({ data }) => {
                     <h4>Video</h4>
                   </div>
                   <div className="video">
-                    <Image src={video} alt="Property video images"/>
+                    <Image src={video} alt="Property video images" width={808} height={401}/>
                     <div className="overlay">
                       <button type="button" onClick={handleShow}><FaPlay className="play-icon" /></button>
                     </div>

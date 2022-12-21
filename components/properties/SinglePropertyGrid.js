@@ -31,7 +31,7 @@ const SinglePropertyGrid = ({property}) => {
               </div>
             </div>
             <div className="image">
-              <Image src={image} alt="Property Image"/>
+              <Image src={image} alt="Property Image" height={233} width={360}/>
             </div>
             <p className="desc">{description.slice(0,1)}</p>
           </div>

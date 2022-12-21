@@ -3,13 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
-import logo1 from "../../public/partner/logo1.png";
-import logo2 from "../../public/partner/logo2.png";
-import logo3 from "../../public/partner/logo3.png";
-import logo4 from "../../public/partner/logo4.png";
 
 const Partner = () => {
-  const partners = [logo1, logo2, logo3, logo4];
+  const partners = ["/partner/logo1.png", "/partner/logo2.png", "/partner/logo3.png", "/partner/logo4.png"];
 
   return (
     <section className="partner">
@@ -46,7 +42,7 @@ const Partner = () => {
                   return (
                     <SwiperSlide key={index}>
                       <div className="item">
-                        <Image src={item} alt="Partner Logo" />
+                        <Image src={item} alt="Partner Logo" width={184} height={48} />
                       </div>
                     </SwiperSlide>
                   );

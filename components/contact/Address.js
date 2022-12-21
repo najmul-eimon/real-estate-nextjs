@@ -18,7 +18,7 @@ const Address = () => {
                 <div key={id} className="col-md-6 col-lg-6">
                   <div className="address-card">
                     <div className="image">
-                      <Image src={image} alt="Location image"/>
+                      <Image src={image} alt="Location image" width={526} height={251}/>
                     </div>
                     <h4>{city}</h4>
                     <ul>

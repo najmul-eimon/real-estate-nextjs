@@ -13,7 +13,7 @@ const SinglePropertyList = ({property}) => {
     <>
       <li className="single-property">
         <div className="image">
-          <Image src={image} alt="Property Image"/>
+          <Image src={image} alt="Property Image" height={233} width={360}/>
         </div>
         <div className="content">
           <h3>{name}</h3>

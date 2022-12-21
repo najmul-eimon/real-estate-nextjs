@@ -23,7 +23,7 @@ const InnerSidebar = ({data}) => {
             <li key={id} className="d-flex align-items-center">
               <div className="image">
                 <Link href={`/property/${id}`}>
-                  <Image src={image} alt="Featured property image"/>
+                  <Image src={image} alt="Featured property image" width={360} height={233}/>
                 </Link>
               </div>
               <div className="others">
@@ -61,17 +61,17 @@ const InnerSidebar = ({data}) => {
         <ContactFrom data="sidebar"/>
       </div>
 
-      {/* Leatest Blogs */}
+      {/* Latest Blogs */}
       <div className="details-box blog-box">
         <div className="details-title">
-          <h5>Leatest Blogs</h5>
+          <h5>Latest Blogs</h5>
         </div>
         <ul className="blog-list">
           {
             blogs?.slice(0,3).map(({id, title, image, date}) => 
             <li key={id} className="d-flex align-items-center">
               <div className="image">
-                <Image src={image} alt="Latest blog image"/>
+                <Image src={image} alt="Latest blog image" width={648} height={226}/>
               </div>
               <div className="others">
                 <div className="d-flex align-items-center justify-content-between">

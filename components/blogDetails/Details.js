@@ -38,7 +38,7 @@ const Details = ({data}) => {
                   </div>
 
                   <div className="image">
-                    <Image src={mainImage} alt="Blog Image"/>
+                    <Image src={mainImage} alt="Blog Image" width={808} height={332}/>
                   </div>
 
                   <h3>{subtitle}</h3>
@@ -50,7 +50,7 @@ const Details = ({data}) => {
                     {
                       gallery?.map((img, index) => 
                       <div key={index} className="image">
-                        <Image src={img} alt="Blog image"/>
+                        <Image src={img} alt="Blog image" width={384} height={332}/>
                       </div>
                       )
                     }

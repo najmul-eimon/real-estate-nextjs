@@ -1,30 +1,25 @@
-import icon1 from '../public/svg/complete.svg';
-import icon2 from '../public/svg/sale.svg';
-import icon3 from '../public/svg/rent.svg';
-import icon4 from '../public/svg/client.svg';
-
 export const achievements = [
   {
     id: "1",
-    icon: icon1,
+    icon: "/svg/complete.svg",
     counter: 2050,
     title: "Completed Property"
   },
   {
     id: "2",
-    icon: icon2,
+    icon: "/svg/sale.svg",
     counter: 760,
     title: "Property Sales"
   },
   {
     id: "3",
-    icon: icon3,
+    icon: "/svg/rent.svg",
     counter: 1230,
     title: "Apartment Rent"
   },
   {
     id: "4",
-    icon: icon4,
+    icon: "/client.svg",
     counter: 1520,
     title: "Happy Clients"
   }

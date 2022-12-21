@@ -5,7 +5,6 @@ import { useRouter } from 'next/router';
 import {BsChevronDown} from 'react-icons/bs';
 import {IoMdClose} from 'react-icons/io';
 import { SaveToLocalContext } from '../layout/Layout';
-import logo from '../../public/logo.png';
 
 const Navbar = () => {
   const categories = ["appartment", "land", "house", "villa", "luxuary home", "office", "single family"]; 
@@ -25,7 +24,7 @@ const Navbar = () => {
                 {/* logo */}
                 <div className="col-7 col-md-4 col-lg-3 col-xl-2">
                   <Link className="navbar-brand" href="/">
-                    <Image src={logo} alt="Picture of logo"/>
+                    <Image src="/logo.png" alt="Picture of logo" width={192} height={42}/>
                   </Link>
                 </div>
 
@@ -46,7 +45,7 @@ const Navbar = () => {
                     {/* mobile screen header */}
                     <div className="mobile-header">
                       <Link className="navbar-brand" href="/">
-                        <Image src={logo} alt="Picture of logo"/>
+                        <Image src="/logo.png" alt="Picture of logo" width={192} height={42}/>
                       </Link>
 
                       <button type="button" id="close-nav" onClick={() => setShowNav(false)}>
