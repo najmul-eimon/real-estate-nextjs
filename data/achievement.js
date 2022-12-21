@@ -19,7 +19,7 @@ export const achievements = [
   },
   {
     id: "4",
-    icon: "/client.svg",
+    icon: "/svg/client.svg",
     counter: 1520,
     title: "Happy Clients"
   }
