@@ -2,6 +2,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
 import {properties} from '../../data/property';
 import PropertyModal from "../shared/PropertyModal";
 import Image from "next/image";
@@ -26,6 +28,8 @@ const RelatedProperties = () => {
                 loop= {true}
                 spaceBetween= {24}
                 autoplay= {true}
+                pagination={{clickable:true}} 
+                modules={[Pagination]} 
                 slidesPerView="auto"
                 slidesPerGroup= {1}
                 breakpoints= {{
@@ -41,7 +45,7 @@ const RelatedProperties = () => {
                 }}
                 className="related-property-slider">
                   {
-                    properties.map(({id, name, floor, space, bedRoom, image, description}) => <SwiperSlide key={id}>
+                    properties.slice(0,4).map(({id, name, floor, space, bedRoom, image, description}) => <SwiperSlide key={id}>
                       <div className="single-property">
                         <div className="item-wrapper">
                           <h3>{name}</h3>
